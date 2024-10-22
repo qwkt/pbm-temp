@@ -1,15 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <title>Max's Photography awesome site</title>
-        </head>
-        <body>
-            <h1>woop woop! welcome!! this is max</h1>
-            oh yeah, welcome to my website!! <em>guys i learned how to add italics this is so cool</em> and now im gonna make it <strong>bold</strong>
-            <h2>and here is my bullet list</h2>
-            <ul>
-                <li>guys i made a bullet!!</li>
-            </ul>
-        </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Max's Photography - photosbymax.com</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+            }
+            body {
+                max-width: 60rem;
+                margin: 1rem;
+                font-size: 1.25rem;
+            }
+            a {
+                font-size: 1.25rem;
+            }
+            header {
+                margin-bottom: 1rem;
+            }
+            .site-logo {
+                float: left;
+                margin-right: 2rem;
+                height: auto;
+                width: 100px;
+            }
+            .subtitle {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            nav {
+                border-bottom: 1px solid black;
+                border-top: 1px solid black;
+                display: flex;
+                margin: 1rem 0;
+                padding: 0.5rem 0;
+            }
+            nav > a {
+                padding-right: clamp(1rem, 2.5vw, 2rem);
+                text-decoration: none;
+            }
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                margin: 1rem 0;
+            }
+            article {
+                flex: 3;
+                min-width: 22rem;
+            }
+            aside {
+                background: hsl(0deg 0% 90%);
+                flex: 1;
+                min-width: 16rem;
+                padding: 0.75rem;
+            }
+            h3 {
+                margin-bottom: 1rem;
+            }
+            p:not(.subtitle) {
+                margin-bottom: 1rem;
+            }
+            footer {
+                border-top: 1px solid black;
+                padding: 1rem 0;
+            }
+            footer a {
+                margin-right: 1rem;
+                text-decoration:  none;
+            }
+            .social-icon {
+                margin-right: .5rem;
+                vertical-align: middle;
+            }
+            @media (max-width: 40rem) {
+                .site-logo {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+<!--        <img src="images/s_logo.png" alt="siteLogo" class="site-logo"> -->
+            <h1>Max's Photography</h1>
+            <p class="subtitle">photosbymax.com</p>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Photos</a>
+            <a href="#">Recent</a>
+            <a href="#">Search</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>        
+        <main>
+            <article>
+                <header>
+                    <h2>Welcome to my website!</h2>
+                </header>
+                <pr>coding this website, setting things up, fixing up photos</pr>
+                <p>hopefully this website will be up and ready soon</p> 
+                <p>yippee!!</p>
+                <p>in the meantime photos will be posted on my insta go check it out!</p>
+            </article>
+            <aside>
+                <h3>Categories</h3>
+                <p>Spring</p>
+                <p>Summer</p>
+                <p>Autumn</p>
+                <p>Winter</p>
+                <p>2024</p>
+                <p>2023</p>
+                <p>etc, etc</p>
+            </aside>
+        </main>
+        
+        <footer>
+            <a href="https://instagram.com/"><img src="images/insta_icon.png" class="social-icon" alt="Instagram logo">Instagram</a>
+            <script src="footer.js">
+            </script>
+        </footer>
+        <script>document.write("Last modified: " + document.lastModified);
+        </script>
+    </body>
 </html>

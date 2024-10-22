@@ -1,0 +1,1 @@
+document.write("© " + new Date().getFullYear() + " photosbymax.com");
